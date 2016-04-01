@@ -1,0 +1,24 @@
+<h2>Add a Hero!</h2>
+
+<form ng-submit="addHero(hero)">
+  <input ng-model="hero.alias" type="text" placeholder="Superhero Name" />
+  <p></p>
+  <input ng-model="hero.first_name" type="text" placeholder="(Real) First Name" />
+  <input ng-model="hero.last_name" type="text" placeholder="(Real) Last Name" />
+  <p></p>
+  <input ng-model="hero.city" type="text" placeholder="City of Origin" />
+  <p></p>
+  <label>Superhero Power</label>
+  <select ng-model="hero.power_name">
+    <option value="Invisibility">Invisibility</option>
+    <option value="Flight">Flight</option>
+    <option value="Super Speed">Super Speed</option>
+    <option value="Heat Vision">Heat Vision</option>
+    <option value="Super Strength">Super Strength</option>
+    <option value="Accelerated Healing">Accelerated Healing</option>
+    <option value="Power Blast">Power Blast</option>
+    <option value="Animal Affinity">Animal Affinity</option>
+  </select>
+  <p></p>
+  <input type="submit" value="Add Hero" />
+</form>

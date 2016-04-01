@@ -1,0 +1,9 @@
+<h2>Hero Menagerie!</h2>
+
+<div ng-repeat="hero in data.response">
+  <h2>{{ hero.alias }}</h2>
+  <h4>{{ hero.first_name }} {{ hero.last_name}}</h4>
+  <h4>{{ hero.city }}</h4>
+  <h3>{{ hero.power_name }}</h3>
+  <button type="button" ng-click="killHero(hero._id)">Remove this Hero</button>
+</div>
